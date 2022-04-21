@@ -23,9 +23,9 @@ Table Of Contents:
 /*****************************************
 Colors:
 - Backgrounds - light gray #f9f8f8
-- Buttons - navy blue #272556
-- Buttons - orange #f25c05
-- Headings text - navy blue #272556
+- Buttons - navy blue #292B28
+- Buttons - orange #deb400ff
+- Headings text - navy blue #292B28
 - Body text - dark gray #565578
 ******************************************/
 
@@ -45,7 +45,7 @@ body, p {
 }
 
 h1 {
-	color: #272556;
+	color: #292B28;
 	font-weight: 600;
 	font-size: 2.5rem;
 	line-height: 3.25rem;
@@ -53,7 +53,15 @@ h1 {
 }
 
 h2 {
-	color: #272556;
+	color: #292B28;
+	font-weight: 600;
+	font-size: 2rem;
+	line-height: 2.625rem;
+	letter-spacing: -0.4px;
+}
+
+h2-green {
+	color: #5cac46ff;
 	font-weight: 600;
 	font-size: 2rem;
 	line-height: 2.625rem;
@@ -61,7 +69,7 @@ h2 {
 }
 
 h3 {
-	color: #272556;
+	color: #292B28;
 	font-weight: 600;
 	font-size: 1.75rem;
 	line-height: 2.25rem;
@@ -69,7 +77,7 @@ h3 {
 }
 
 h4 {
-	color: #272556;
+	color: #292B28;
 	font-weight: 600;
 	font-size: 1.5rem;
 	line-height: 2.125rem;
@@ -77,14 +85,14 @@ h4 {
 }
 
 h5 {
-	color: #272556;
+	color: #292B28;
 	font-weight: 600;
 	font-size: 1.25rem;
 	line-height: 1.625rem;
 }
 
 h6 {
-	color: #272556;
+	color: #292B28;
 	font-weight: 600;
 	font-size: 1rem;
 	line-height: 1.375rem;
@@ -114,6 +122,11 @@ h6 {
 	margin-bottom: 0.5rem;
 }
 
+.img-fluid {
+    width: 100%;
+    /* height: auto; */
+}
+
 a {
 	color: #565578;
 	text-decoration: underline;
@@ -137,15 +150,15 @@ a:hover {
 }
 
 .bg-gray {
-	background-color: #f9f8f8;
+	background-color: #F3F6FA;
 }
 
 .btn-solid-reg {
 	display: inline-block;
 	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
-	border: 1px solid #272556;
+	border: 1px solid #5cac46ff;
 	border-radius: 30px;
-	background-color: #272556;
+	background-color: #5cac46ff;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -156,16 +169,16 @@ a:hover {
 
 .btn-solid-reg:hover {
 	background-color: transparent;
-	color: #272556; /* needs to stay here because of the color property of a tag */
+	color: #5cac46ff; /* needs to stay here because of the color property of a tag */
 	text-decoration: none;
 }
 
 .btn-solid-lg {
 	display: inline-block;
 	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
-	border: 1px solid #272556;
+	border: 1px solid #2d82ffff;
 	border-radius: 30px;
-	background-color: #272556;
+	background-color: #2d82ffff;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -176,16 +189,16 @@ a:hover {
 
 .btn-solid-lg:hover {
 	background-color: transparent;
-	color: #272556; /* needs to stay here because of the color property of a tag */
+	color: #2d82ffff; /* needs to stay here because of the color property of a tag */
 	text-decoration: none;
 }
 
 .btn-solid-sm {
 	display: inline-block;
 	padding: 1rem 1.5rem 1rem 1.5rem;
-	border: 1px solid #272556;
+	border: 1px solid #292B28;
 	border-radius: 30px;
-	background-color: #272556;
+	background-color: #292B28;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -196,17 +209,17 @@ a:hover {
 
 .btn-solid-sm:hover {
 	background-color: transparent;
-	color: #272556; /* needs to stay here because of the color property of a tag */
+	color: #292B28; /* needs to stay here because of the color property of a tag */
 	text-decoration: none;
 }
 
 .btn-outline-reg {
 	display: inline-block;
 	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
-	border: 1px solid #f25c05;
+	border: 1px solid #deb400ff;
 	border-radius: 30px;
 	background-color: transparent;
-	color: #f25c05;
+	color: #deb400ff;
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0;
@@ -215,7 +228,7 @@ a:hover {
 }
 
 .btn-outline-reg:hover {
-	background-color: #f25c05;
+	background-color: #deb400ff;
 	color: #ffffff;
 	text-decoration: none;
 }
@@ -223,10 +236,10 @@ a:hover {
 .btn-outline-lg {
 	display: inline-block;
 	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
-	border: 1px solid #f25c05;
+	border: 1px solid #deb400ff;
 	border-radius: 30px;
 	background-color: transparent;
-	color: #f25c05;
+	color: #deb400ff;
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0;
@@ -243,10 +256,10 @@ a:hover {
 .btn-outline-sm {
 	display: inline-block;
 	padding: 1rem 1.5rem 1rem 1.5rem;
-	border: 1px solid #f25c05;
+	border: 1px solid #deb400ff;
 	border-radius: 30px;
 	background-color: transparent;
-	color: #f25c05;
+	color: #deb400ff;
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0;
@@ -255,7 +268,7 @@ a:hover {
 }
 
 .btn-outline-sm:hover {
-	background-color: #f25c05;
+	background-color: #deb400ff;
 	color: #ffffff;
 	text-decoration: none;
 }
@@ -273,9 +286,9 @@ a:hover {
 	display: inline-block;
 	width: 100%;
 	height: 3.25rem;
-	border: 1px solid #f25c05;
+	border: 1px solid #deb400ff;
 	border-radius: 30px;
-	background-color: #f25c05;
+	background-color: #deb400ff;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -285,9 +298,9 @@ a:hover {
 }
 
 .form-control-submit-button:hover {
-	border: 1px solid #f25c05;
+	border: 1px solid #deb400ff;
 	background-color: transparent;
-	color: #f25c05;
+	color: #deb400ff;
 }
 
 /* Fade Animation For Rotating Text - ReplaceMe  */
@@ -338,7 +351,7 @@ a:hover {
 /*     Navigation     */
 /**********************/
 .navbar {
-	background-color: #fff2dc;
+	background-color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0.875rem;
@@ -350,12 +363,12 @@ a:hover {
 }
 
 .navbar .logo-image img {
-    width: 132px;
+    width: 100%;
 	height: 30px;
 }
 
 .navbar .logo-text {
-	color: #272556;
+	color: #292B28;
 	font-weight: 600;
 	font-size: 1.875rem;
 	line-height: 1rem;
@@ -372,7 +385,7 @@ a:hover {
 	padding-left: 1rem;
 	overflow-y: auto;
 	visibility: hidden;
-	background-color: #fff2dc;
+	background-color: #ffffff;
 	transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
 	transition: transform .3s ease-in-out, visibility .3s ease-in-out;
 	transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
@@ -392,7 +405,7 @@ a:hover {
 .navbar .nav-item .nav-link {
 	padding-top: 0.625rem;
 	padding-bottom: 0.625rem;
-	color: #272556;
+	color: #292B28;
 	text-decoration: none;
 	transition: all 0.2s ease;
 }
@@ -400,7 +413,7 @@ a:hover {
 .navbar .nav-item.dropdown.show .nav-link,
 .navbar .nav-item .nav-link:hover,
 .navbar .nav-item .nav-link.active {
-	color: #f25c05;
+	color: #deb400ff;
 }
 
 /* Dropdown Menu */
@@ -422,13 +435,13 @@ a:hover {
 	margin-top: 0.25rem;
 	margin-bottom: 0.25rem;
 	border: none;
-	background-color: #fff2dc;
+	background-color: #ffffff;
 }
 
 .navbar .dropdown-item {
 	padding-top: 0.625rem;
 	padding-bottom: 0.625rem;
-	color: #272556;
+	color: #292B28;
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0.875rem;
@@ -436,8 +449,8 @@ a:hover {
 }
 
 .navbar .dropdown-item:hover {
-	background-color: #fff2dc;
-	color: #f25c05;
+	background-color: #ffffff;
+	color: #deb400ff;
 }
 
 .navbar .dropdown-divider {
@@ -445,7 +458,7 @@ a:hover {
 	height: 1px;
 	margin: 0.5rem auto 0.5rem auto;
 	border: none;
-	background-color: #d1d1d1;
+	background-color: #ffffff;
 }
 /* end of dropdown menu */
 
@@ -462,7 +475,7 @@ a:hover {
 .header {
 	padding-top: 8rem;
 	padding-bottom: 9rem;
-	background-color: #fff2dc;
+	background-color: #F3F6FA;
 	text-align: center;
 }
 
@@ -471,7 +484,7 @@ a:hover {
 }
 
 .header .replace-me {
-	color: #f25c05;
+	color: #deb400ff;
 }
 
 .header .replace-me span {
@@ -496,8 +509,8 @@ a:hover {
 /*     Features     */
 /********************/
 .cards-1 {
-	padding-top: 9rem;
-	padding-bottom: 1.25em;
+	padding-top: 4rem;
+	padding-bottom: 2.25em;
 	text-align: center;
 }
 
@@ -506,7 +519,7 @@ a:hover {
 }
 
 .cards-1 .h2-heading span {
-	color: #f25c05;
+	color: #deb400ff;
 	text-decoration: underline;
 }
 
@@ -518,7 +531,7 @@ a:hover {
 
 .cards-1 .card-icon {
 	width: 76px;
-	height: 76px;
+	
 	margin-right: auto;
 	margin-bottom: 2.5rem;
 	margin-left: auto;
@@ -764,7 +777,7 @@ a:hover {
 .basic-3 {
 	padding-top: 9rem;
 	padding-bottom: 9rem;
-	background-color: #272556;
+	background-color: #292B28;
 	text-align: center;
 }
 
@@ -780,7 +793,7 @@ a:hover {
 
 .basic-3 .btn-outline-lg:hover {
 	background-color: #ffffff;
-	color: #272556;
+	color: #292B28;
 }
 
 
@@ -826,7 +839,7 @@ a:hover {
 .cards-2 .card-title span {
 	margin-right: 0.75rem;
 	margin-left: 0.75rem;
-	color: #272556;
+	color: #292B28;
 	font-weight: 600;
 	font-size: 1.75rem;
 	line-height: 2rem;
@@ -843,7 +856,7 @@ a:hover {
 
 .cards-2 .card-body .price {
 	margin-bottom: 3rem;
-	color: #272556;
+	color: #292B28;
 	font-weight: 600;
 	font-size: 3.5rem;
 	line-height: 2rem;
@@ -933,7 +946,7 @@ a:hover {
 .footer {
 	padding-top: 6.5rem;
 	padding-bottom: 2rem;
-	background-color: #272556;
+	background-color: #292B28;
 }
 
 .footer a {
@@ -974,12 +987,12 @@ a:hover {
 }
 
 .footer .footer-col.third .fa-stack .fa-stack-1x {
-	color: #272556;
+	color: #292B28;
 	transition: all 0.2s ease;
 }
 
 .footer .footer-col.third .fa-stack:hover .fa-stack-2x {
-	color: #272556;
+	color: #292B28;
 }
 
 .footer .footer-col.third .fa-stack:hover .fa-stack-1x {
@@ -992,7 +1005,7 @@ a:hover {
 /*********************/
 .copyright {
 	padding-bottom: 1rem;
-	background-color: #272556;
+	background-color: #292B28;
 	text-align: center;
 }
 
@@ -1069,7 +1082,7 @@ a:hover {
 }
 
 .ex-cards-1 .card .fa-stack-2x {
-	color: #f25c05;
+	color: #deb400ff;
 }
 
 .ex-cards-1 .card .fa-stack-1x {
@@ -1149,7 +1162,7 @@ a:hover {
 	.navbar.top-nav-collapse {
 		padding-top: 0.5rem;
 		padding-bottom: 0.5rem;
-		background-color: #fff2dc;
+		background-color: #ffffff;
 	}
 
 	.offcanvas-collapse {
@@ -1219,7 +1232,7 @@ a:hover {
 	.cards-1 .card {
 		display: inline-block;
 		width: 286px;
-		vertical-align: top;
+		/*vertical-align: top;*/
 	}
 	
 	.cards-1 .card:nth-of-type(3n+2) {
@@ -1388,8 +1401,8 @@ a:hover {
 	/* Header */
 	.header {
 		overflow: hidden;
-		padding-top: 18.5rem;
-		padding-bottom: 18rem;
+		padding-top: 12.5rem;
+		padding-bottom: 13rem;
 	}
 
 	.header .image-container {
@@ -1397,11 +1410,7 @@ a:hover {
 	}
 	
 	.header .image-container img {
-		position: absolute;
-		top: -180px;
-		left: -10px;
-		width: 840px;
-		max-width: none;
+		width: 80%;
 	}
 	/* end of header */
 
@@ -1420,7 +1429,7 @@ a:hover {
 
 	/* Details 1 */
 	.basic-1 .text-container {
-		margin-top: 10rem;
+		margin-top: 4rem;
 	}
 
 	.basic-1 h2 {
