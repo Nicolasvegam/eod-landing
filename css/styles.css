@@ -52,6 +52,14 @@ h1 {
 	letter-spacing: -0.4px;
 }
 
+h1-white {
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 2.5rem;
+	line-height: 3.25rem;
+	letter-spacing: -0.4px;
+}
+
 h2 {
 	color: #292B28;
 	font-weight: 600;
@@ -1054,7 +1062,7 @@ a:hover {
 .ex-header {
 	padding-top: 9rem;
 	padding-bottom: 5rem;
-	background-color: #F3F6FA;
+	background-color: #1f68f3;
 }
 
 .ex-basic-1 .list-unstyled .fas {
